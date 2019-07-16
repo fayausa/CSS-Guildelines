@@ -1,0 +1,23 @@
+{
+    "lang": "en",
+    "short_name": "cssguidelines",
+    "name": "CSS Guidelines",
+    "description": "Faya css guidelines that help the developers to work in a unified way.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white",
+    "icons": [{
+      "src": "/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }, {
+      "src": "/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "/144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }]
+  }

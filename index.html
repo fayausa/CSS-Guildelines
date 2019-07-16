@@ -67,7 +67,7 @@
 						</div>
 						<div>
 							<p>
-								<span> Daliya John</span>, <br>
+								<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Daliya John</span></span>, <br>
 								<span>UI Engineer at Faya Innovation</span>
 							</p>
 						</div>
@@ -101,6 +101,40 @@
 			</section>
 		</main>
 		<!-- main div end -->
+
+
+		<!-- Organization schema start -->
+		<script type="application/ld+json">
+			{ "@context" : "https://schema.org",
+				"@type" : "Organization",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Ontario",
+					"addressRegion": "CA",
+					"postalCode": "91761",
+					"streetAddress": "2330 S Archibald Ave"
+				},
+				"name" : "FAYA Corporation",
+				"url" : "https://www.fayausa.com",
+				"email": "info@fayausa.com",
+				"telephone": "+1 866-686-5988",
+				"description": "FAYA specializes in creating innovative digital platforms that drive your business, compelling marketing solutions that elevate your brand, and quality branded merchandise that promotes your growth.",
+				"logo" : "https://fayausa.com/images/og/faya-logo.jpg",
+				"sameAs" : [  "https://www.facebook.com/fayausa",
+											"https://twitter.com/@fayausa",
+											"https://www.linkedin.com/company-beta/10612289/?pathWildcard=10612289",
+											"https://plus.google.com/+Fayausa",
+											"http://youtube.com/fayausa"
+										],
+				"author": {
+					"@type": "Person",
+					"url": "www.daliyajohn.com",
+					"name": "Daliya John"
+					}
+				}			
+			}
+		</script>
+		<!-- Organization schema ends-->
 	</body>
 
 </html>
