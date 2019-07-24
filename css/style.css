@@ -6,13 +6,24 @@ body {
 main {
   height: 100%;
 }
+.banner {
+  background: #88c140;
+  height: 300px;
+}
 .banner img {
-  width: 100%;
+  mix-blend-mode: color-burn;
 }
 /* guideline-container start */
 .guideline-container {
   display: flex;
   height: 100vh;
+}
+.section-container {
+  flex-direction: column;
+    padding: 33px 37px 21px 37px;
+}
+.danger {
+  color: red!important;
 }
 
 
@@ -25,22 +36,33 @@ main {
   line-height: 1.8;
   background: #163558;
 }
-.guideline-container section {
-  width: calc(100% - 623px);
-  padding: 33px 65px 21px 37px;
-}
+
 .guideline-container section h1 {
   font-size: 23px;
-  color: #607d8b;
+  color:#3f6998;
   margin: 15px 0px 15px 0px;
   font-family: 'Exo 2', sans-serif;
 }
 .guideline-container section h3 {
-  color: #607d8b;
+  color:#3f6998;
+  font-size: 18px;
 }
-.guideline-container section p {
+code {
+  background: #171515ed;
+  color: #9eff28;
+  display: block;
+  padding: 12px 12px 24px 30px;
+  font-size: 15px;
+}
+code p {
+  color: white!important;
+  line-height: 1!important;
+  font-size: 16px!important;
+}
+.guideline-container section p , .section-container li {
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.8;
+  color: #211f1f;
 }
 table {
   border-collapse: collapse;
@@ -60,9 +82,9 @@ article ul li {
   font-size: 14px;
   margin-left: 23px;
 }
-xmp {
+/* xmp {
   margin: 0;
-}
+} */
 article ul {
   background: rgba(175, 169, 169, 0.06);
   border: 1px solid #8080801a;
@@ -78,17 +100,13 @@ article b {
 article a {
   text-decoration: none;
 }
-pre {
+/* pre {
   padding: 0px 17px 0px 17px;
   background: #80808014;
   color: #d20d0d;
   line-height: 1.5;
-  /* overflow-x: scroll; */
-}
+} */
 .author {
-  /* background: #80808014;
-  padding: 14px 7px 17px 18px;
-  font-size: 14px; */
   display: flex;
   align-items: center;
 
