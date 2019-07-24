@@ -41,18 +41,67 @@
 			<div class="guideline-container">
 				<!-- article start -->
 				<article>
-					<ul>
+					<ul class="article-order">
 						<a href="#Introduction">
 							<b>1. Introduction</b>
 						</a>
 						<br>
 						<a href="#guidelines">
-							<b> 1.1 Why Guidelines </b>
+							<b> 2. Why Guidelines </b>
 						</a>
 						<br>
 						<a href="#css">
-							<b> 1.3 CSS </b>
+							<b> 3. CSS </b>
 						</a>
+						<ul class="sub-menu">
+							<li>
+								<a href="">3.1 Syntax</a>
+							</li>
+							<li>
+								<a href="">3.2 Naming Convention</a>
+							</li>
+							<li>
+								<a href="">3.3 Reusability</a>
+							</li>
+							<li>
+								<a href="">3.4 Selector performance</a>
+							</li>
+							<li>
+								<a href="">3.5 Avoid !important</a>
+							</li>
+							<li>
+								<a href="">3.6 Declaration order</a>
+							</li>
+							<li>
+								<a href="">3.7 Indentation</a>
+							</li>
+							<li>
+								<a href="">3.8 CSS Comments</a>
+							</li>
+							<li>
+								<a href="">3.9 Media query state</a>
+							</li>
+						</ul>
+						<a href="#guidelines">
+							<b> 4. Categorizing CSS rules </b>
+						</a>
+						<ul class="sub-menu">
+							<li>
+								<a href="">4.1 Base rules </a>
+							</li>
+							<li>
+								<a href="">4.2 Layout rules</a>
+							</li>
+							<li>
+								<a href="">4.3 Module rules </a>
+							</li>
+							<li>
+								<a href="">4.4 State rules </a>
+							</li>
+							<li>
+								<a href="">4.4 Theme rules </a>
+							</li>
+						</ul>
 					</ul>
 				</article>
 				<!-- article ends -->
@@ -81,12 +130,11 @@
 						</div>
 					</section>
 
-
 					<section>
-						<h1>1.3 CSS</h1>
+						<h1 id="css">3. CSS</h1>
 						<p>CSS is a style sheet language used for describing the presentation of a document written in markup language.</p>
 
-						<h3><strong>1.3.1 Syntax</strong></h3>
+						<h3><strong>3.1 Syntax</strong></h3>
 						<ul>
 							<li>Use two tab space for indentation (four space). </li>
 							<li>Include one space before the opening brace of declaration blocks. </li>
@@ -100,7 +148,7 @@
 							<li>Avoid specifying units for zero values, e.g., margin: 0; instead of margin: 0px;. </li>
 						</ul>
 
-						<h3>1.3.2 Naming Convention</h3>
+						<h3>3.2 Naming Convention</h3>
 						<p>On large projects, there is chance to broke our styles in multiple files. In these cases, naming convention also makes it easier to find which file a style belongs to.</p>
 
 						<code>
@@ -118,12 +166,12 @@
 							.service-list { }
 						</code>
 
-						<h3>1.3.3 Reusability</h3>
+						<h3>3.3 Reusability</h3>
 						<p>
 							We want the option to be able to move, recycle, duplicate, and our components across our projects.so that we can use class instead of ID. ID can be used to identify one element, whereas a class can be used to identify more than one.
 						</p>
 
-						<h3>1.3.4 Selector performance</h3>
+						<h3>3.4 Selector performance</h3>
 						<p>Selector performance is very important because we must know about how quickly a browser can match the selectors . The browsers read CSS selectors right-to-left.</p>
 						<code>
 							<p class="danger">Bad practice</p>
@@ -132,10 +180,10 @@
 							.header ul {}
 						</code>
 
-						<h3>1.3.5 Avoid !important</h3>
+						<h3>3.5 Avoid !important</h3>
 						<p>Avoid the use of important. We use !important for overwrite something. We can avoid the use of !important by using modular structured css.</p>
 
-						<h3>1.3.6 Declaration order</h3>
+						<h3>3.6 Declaration order</h3>
 						<p>If we write a class for a div, there is a declaration order for that style. </p>
 						<p>
 								1. Positioning <br>
@@ -168,7 +216,7 @@
 							}
 						</code>
 
-						<h3>1.3.7 Indentation</h3>
+						<h3>3.7 Indentation</h3>
 						<p>Indentation is a coding techniques to make our css clear. With out using indentation it’s hard to figure out where the code starts and ends. Use one tab space for indentation (2 space).</p>
 						<code>
 								.product { <br>
@@ -176,7 +224,7 @@
 								}
 						</code>
 
-						<h3>1.3.8 CSS Comments</h3>
+						<h3>3.8 CSS Comments</h3>
 						<p>	Code is written and maintained by many developers. So that we should have to ensure your code is descriptive, well commented. Well comments will convey the purpose and all the developers can understand the code.</p>
 						<code>
 							<p>//products start</p>	
@@ -186,43 +234,86 @@
 								<p>//products end		</p>
 						</code>
 					
-					
+						<h3>3.9 Media query state</h3>
+						<p>Media query state are used to set our website in different resolution.</p>
+						<code>
+							<p>Small phone </p>
+							@media only screen and (min-width : 480px) {}
+							<p>Ipad </p>
+							@media only screen and (min-width : 768px) and (max-width : 1024px) {}
+							<p>Desktop </p>
+							@media only screen and (min-width : 1024px) and (max-width : 1440px) {}
+							<p>2K Device </p>
+							@media only screen and (min-width : 1440px) and (max-width : 2160px) {}
+							<p>4K Device </p>
+							@media only screen and (min-width : 2160px) and (max-width : 3840px) {}   
+						</code>
 						
+						<h1>4. Categorizing CSS rules</h1>
+						<h3>4.1 Base rules</h3>
+						<p>Initially we can set our default style. Almost we use single element selector. it includes attribute selector, pseudo-class selector and child selector. </p>
+						<ul>
+							<li>single element selector - body ,html { }</li>
+							<li>attribute selector – input[type=text]{} </li>
+							<li>child selector - a {} </li>
+							<li>pseudo-class selector - a:hover {} </li>
+							<li>Initially we can define our background color, font family, font size for our entire project at the top of our style sheet.</li>
+						</ul>
+						<code>
+							body {<br>
+								&nbsp&nbsp background-color: gray; <br>
+								&nbsp&nbsp font-family:roboto;<br>
+								&nbsp&nbsp font size: 14px;<br>
+								&nbsp&nbsp line-height:1.7;<br>
+								&nbsp&nbsp color: black;<br>
+								&nbsp&nbsp height:100%;<br>
+							}	 
+						</code>
+			
+						<h3>4.2 Layout rules</h3>
+						<p>Layout is used to lay elements out on the page. Layout divide the page in to sections .Also it may contain several module together. There is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer.</p>
+						<code>
+							#header, #article, #footer { <br>
+								&nbsp&nbsp  width: 960px; margin: auto;<br>
+							}<br>
+							#article {<br>
+								&nbsp&nbsp  border: solid #CCC; border-width: 1px 0 0;<br>
+							}
+						</code>
+						
+						<h3>4.3 Module rules</h3>
+						<p>Module is a more discrete component of the page.Module placed inside the layout component.Module should be designed to exist as a standalone component.Modules can easily be moved to different parts of the layout without breaking.</p>
+						<code>
+							&lt;div class="layout-primary"&gt; <br>
+							&nbsp&nbsp &lt;div class="service service-list"&gt; <br>
+							&nbsp&nbsp	&nbsp&nbsp&lt;div class="grid-serviceList"&gt; <br>
+							&nbsp&nbsp	&nbsp&nbsp	&nbsp&nbsp&lt;p&gt;content 1&lt;/p&gt; <br>
+							&nbsp&nbsp	&nbsp&nbsp	&nbsp&nbsp&lt;span&gt;content 2 &lt;/span&gt; <br>
+							&nbsp&nbsp	&nbsp&nbsp	&lt;/div&gt; <br>
+							&nbsp&nbsp	&lt;/div&gt; <br>
+							&lt;/div&gt; <br>
+						</code>
 
-
-
-
+						<h3>4.4 State rule</h3>
+						<p>State rule describe how our module or layout looks when in a particular state.</p>
+						<code>
+							<p>Is it hidden or expanded - isHidden / isExpand </p>
+							<p>Is it active or inactive - isActive / isInactive </p>
+						</code>
+					
+						<h3>4.5 Theme rules</h3>
+						<p>It is probably self-evident but a theme defines colours and images that give your application or site its look and feel. Separating the theme out into its own set of styles allows for those styles to be easily redefined for alternate themes.</p>
+						<code>
+							h1 { <br>
+								&nbsp&nbsp color:red; <br>
+							} <br>
+							.nav { <br>
+								&nbsp&nbsp font-size:12px; <br>
+								&nbsp&nbsp background:blue; <br>
+							}
+						</code>
 					</section>
-
-
-
-
-
-				
-					
-					
-					
-				
-
-
-
-
-
-
-
-
-				
-					
-					
-		
-
-
-			</div>
-
-
-
-
-
+				</div>
 			</div>
 		</main>
 		<!-- main div end -->
