@@ -8,10 +8,23 @@ main {
 }
 .banner {
   background: #88c140;
-  height: 300px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .banner img {
   mix-blend-mode: color-burn;
+  width: 400px;
+}
+.banner p {
+  font-size: 43px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  font-family: monospace;
+  margin-top: -18px;
 }
 /* guideline-container start */
 .guideline-container {
@@ -31,11 +44,7 @@ main {
   color: #bf2525;
   font-weight: bold;
 }
-.guideline-container article {
-  width: 255px;
-  line-height: 1.8;
-  background: #163558;
-}
+
 
 .guideline-container section h1 {
   font-size: 23px;
@@ -82,9 +91,13 @@ article ul li {
   font-size: 14px;
   margin-left: 23px;
 }
-/* xmp {
-  margin: 0;
-} */
+
+article {
+  width: 250px;
+  line-height: 1.8;
+  background: #163558;
+  margin-top: 10px;
+}
 article ul {
   background: rgba(175, 169, 169, 0.06);
   border: 1px solid #8080801a;
@@ -100,12 +113,6 @@ article b {
 article a {
   text-decoration: none;
 }
-/* pre {
-  padding: 0px 17px 0px 17px;
-  background: #80808014;
-  color: #d20d0d;
-  line-height: 1.5;
-} */
 .author {
   display: flex;
   align-items: center;
