@@ -46,7 +46,7 @@
 							<b>1. Introduction</b>
 						</a>
 						<br>
-						<a href="#guidelines">
+						<a href="#Guidelines">
 							<b> 2. Why Guidelines </b>
 						</a>
 						<br>
@@ -55,51 +55,51 @@
 						</a>
 						<ul class="sub-menu">
 							<li>
-								<a href="">3.1 Syntax</a>
+								<a href="#Syntax">3.1 Syntax</a>
 							</li>
 							<li>
-								<a href="">3.2 Naming Convention</a>
+								<a href="#Naming-Convention">3.2 Naming Convention</a>
 							</li>
 							<li>
-								<a href="">3.3 Reusability</a>
+								<a href="#Reusability">3.3 Reusability</a>
 							</li>
 							<li>
-								<a href="">3.4 Selector performance</a>
+								<a href="#Selector-performance">3.4 Selector performance</a>
 							</li>
 							<li>
-								<a href="">3.5 Avoid !important</a>
+								<a href="#Avoid-!important">3.5 Avoid !important</a>
 							</li>
 							<li>
-								<a href="">3.6 Declaration order</a>
+								<a href="#Declaration-order">3.6 Declaration order</a>
 							</li>
 							<li>
-								<a href="">3.7 Indentation</a>
+								<a href="#Indentation">3.7 Indentation</a>
 							</li>
 							<li>
-								<a href="">3.8 CSS Comments</a>
+								<a href="#CSS-comments">3.8 CSS Comments</a>
 							</li>
 							<li>
-								<a href="">3.9 Media query state</a>
+								<a href="#Media-query-state">3.9 Media query state</a>
 							</li>
 						</ul>
-						<a href="#guidelines">
+						<a href="#Categorizing">
 							<b> 4. Categorizing CSS rules </b>
 						</a>
 						<ul class="sub-menu">
 							<li>
-								<a href="">4.1 Base rules </a>
+								<a href="#Base-rules">4.1 Base rules </a>
 							</li>
 							<li>
-								<a href="">4.2 Layout rules</a>
+								<a href="#Layout-rules">4.2 Layout rules</a>
 							</li>
 							<li>
-								<a href="">4.3 Module rules </a>
+								<a href="#Module-rules">4.3 Module rules </a>
 							</li>
 							<li>
-								<a href="">4.4 State rules </a>
+								<a href="#State-rules">4.4 State rules </a>
 							</li>
 							<li>
-								<a href="">4.4 Theme rules </a>
+								<a href="#Theme-rules">4.4 Theme rules </a>
 							</li>
 						</ul>
 					</ul>
@@ -124,7 +124,7 @@
 							<p>In working on large or small projects with dozens of developers, it is important that all the developers are working
 								in a unified way. So that we should have maintain our code easily and keep it more readable.</p>
 						</div>
-						<div id="guidelines">
+						<div id="Guidelines">
 							<h1>1.1 Importance of guidelines</h1>
 							<p>By using guidelines we can keep our code more organized and structured, that is easier to build and easier to maintain.</p>
 						</div>
@@ -134,7 +134,7 @@
 						<h1 id="css">3. CSS</h1>
 						<p>CSS is a style sheet language used for describing the presentation of a document written in markup language.</p>
 
-						<h3><strong>3.1 Syntax</strong></h3>
+						<h3 id="Syntax"><strong>3.1 Syntax</strong></h3>
 						<ul>
 							<li>Use two tab space for indentation (four space). </li>
 							<li>Include one space before the opening brace of declaration blocks. </li>
@@ -148,7 +148,7 @@
 							<li>Avoid specifying units for zero values, e.g., margin: 0; instead of margin: 0px;. </li>
 						</ul>
 
-						<h3>3.2 Naming Convention</h3>
+						<h3 id="Naming-Convention">3.2 Naming Convention</h3>
 						<p>On large projects, there is chance to broke our styles in multiple files. In these cases, naming convention also makes it easier to find which file a style belongs to.</p>
 
 						<code>
@@ -166,12 +166,12 @@
 							.service-list { }
 						</code>
 
-						<h3>3.3 Reusability</h3>
+						<h3 id="Reusability">3.3 Reusability</h3>
 						<p>
 							We want the option to be able to move, recycle, duplicate, and our components across our projects.so that we can use class instead of ID. ID can be used to identify one element, whereas a class can be used to identify more than one.
 						</p>
 
-						<h3>3.4 Selector performance</h3>
+						<h3 id="Selector-performance">3.4 Selector performance</h3>
 						<p>Selector performance is very important because we must know about how quickly a browser can match the selectors . The browsers read CSS selectors right-to-left.</p>
 						<code>
 							<p class="danger">Bad practice</p>
@@ -180,10 +180,10 @@
 							.header ul {}
 						</code>
 
-						<h3>3.5 Avoid !important</h3>
+						<h3 id="Avoid-!important">3.5 Avoid !important</h3>
 						<p>Avoid the use of important. We use !important for overwrite something. We can avoid the use of !important by using modular structured css.</p>
 
-						<h3>3.6 Declaration order</h3>
+						<h3 id="Declaration-order">3.6 Declaration order</h3>
 						<p>If we write a class for a div, there is a declaration order for that style. </p>
 						<p>
 								1. Positioning <br>
@@ -216,7 +216,7 @@
 							}
 						</code>
 
-						<h3>3.7 Indentation</h3>
+						<h3 id="Indentation">3.7 Indentation</h3>
 						<p>Indentation is a coding techniques to make our css clear. With out using indentation it’s hard to figure out where the code starts and ends. Use one tab space for indentation (2 space).</p>
 						<code>
 								.product { <br>
@@ -224,7 +224,7 @@
 								}
 						</code>
 
-						<h3>3.8 CSS Comments</h3>
+						<h3 id="CSS-comments">3.8 CSS Comments</h3>
 						<p>	Code is written and maintained by many developers. So that we should have to ensure your code is descriptive, well commented. Well comments will convey the purpose and all the developers can understand the code.</p>
 						<code>
 							<p>//products start</p>	
@@ -234,7 +234,7 @@
 								<p>//products end		</p>
 						</code>
 					
-						<h3>3.9 Media query state</h3>
+						<h3 id="Media-query-state">3.9 Media query state</h3>
 						<p>Media query state are used to set our website in different resolution.</p>
 						<code>
 							<p>Small phone </p>
@@ -249,8 +249,8 @@
 							@media only screen and (min-width : 2160px) and (max-width : 3840px) {}   
 						</code>
 						
-						<h1>4. Categorizing CSS rules</h1>
-						<h3>4.1 Base rules</h3>
+						<h1 id="Categorizing">4. Categorizing CSS rules</h1>
+						<h3 id="Base-rules">4.1 Base rules</h3>
 						<p>Initially we can set our default style. Almost we use single element selector. it includes attribute selector, pseudo-class selector and child selector. </p>
 						<ul>
 							<li>single element selector - body ,html { }</li>
@@ -270,7 +270,7 @@
 							}	 
 						</code>
 			
-						<h3>4.2 Layout rules</h3>
+						<h3 id="Layout-rules">4.2 Layout rules</h3>
 						<p>Layout is used to lay elements out on the page. Layout divide the page in to sections .Also it may contain several module together. There is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer.</p>
 						<code>
 							#header, #article, #footer { <br>
@@ -281,7 +281,7 @@
 							}
 						</code>
 						
-						<h3>4.3 Module rules</h3>
+						<h3 id="Module-rules">4.3 Module rules</h3>
 						<p>Module is a more discrete component of the page.Module placed inside the layout component.Module should be designed to exist as a standalone component.Modules can easily be moved to different parts of the layout without breaking.</p>
 						<code>
 							&lt;div class="layout-primary"&gt; <br>
@@ -294,14 +294,14 @@
 							&lt;/div&gt; <br>
 						</code>
 
-						<h3>4.4 State rule</h3>
+						<h3 id="State-rules">4.4 State rule</h3>
 						<p>State rule describe how our module or layout looks when in a particular state.</p>
 						<code>
 							<p>Is it hidden or expanded - isHidden / isExpand </p>
 							<p>Is it active or inactive - isActive / isInactive </p>
 						</code>
 					
-						<h3>4.5 Theme rules</h3>
+						<h3 id="Theme-rules">4.5 Theme rules</h3>
 						<p>It is probably self-evident but a theme defines colours and images that give your application or site its look and feel. Separating the theme out into its own set of styles allows for those styles to be easily redefined for alternate themes.</p>
 						<code>
 							h1 { <br>

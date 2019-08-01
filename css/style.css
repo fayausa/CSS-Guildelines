@@ -138,7 +138,8 @@ article a {
 @media only screen and (max-width: 768px) {
   .guideline-container section,
   .guideline-container article {
-    width: 90%;
+    width: 100%;
+    padding: 0px 0px 0px 0px!important;
   }
   pre {
     overflow-x: scroll;
@@ -151,6 +152,24 @@ article a {
   }
   .guideline-container article {
     padding: 0px 20px 21px 20px;
+  }
+  .article-order {
+    padding: 4px 0px 3px 12px;
+  }
+  .section-container {
+    width: 93%;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 12px;
+  }
+  .banner {
+    height: 254px;
+  }
+  .banner img {
+    width: 275px;
+  }
+  .banner p {
+    font-size: 38px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
