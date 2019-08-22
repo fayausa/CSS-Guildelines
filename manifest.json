@@ -1,6 +1,6 @@
 {
   "lang": "en",
-  "short_name": "cssguidelines",
+  "short_name": "Css Guidelines",
   "name": "CSS Guidelines",
   "description": "Faya css guidelines that help the developers to work in a unified way.",
   "start_url": "/CSS-Guildelines/index.html",
@@ -9,12 +9,12 @@
   "theme_color": "white",
   "icons": [
     {
-      "src": "https://fayausa.github.io/CSS-Guildelines/image/icon-192x192.png",
+      "src": "/image/192X192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://fayausa.github.io/CSS-Guildelines/image/icon-512x512.png",
+      "src": "/image/512X512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
