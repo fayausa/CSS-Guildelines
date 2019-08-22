@@ -9,12 +9,12 @@
   "theme_color": "white",
   "icons": [
     {
-      "src": "/image/192X192.png",
+      "src": "https://fayausa.github.io/CSS-Guildelines/image/192X192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/image/512X512.png",
+      "src": "https://fayausa.github.io/CSS-Guildelines/image/512X512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

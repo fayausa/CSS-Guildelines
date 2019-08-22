@@ -26,6 +26,7 @@ main {
   margin: 0;
   font-family: monospace;
   margin-top: -18px;
+  text-align: center;
 }
 /* guideline-container start */
 .guideline-container {
