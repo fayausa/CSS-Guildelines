@@ -346,7 +346,12 @@
 		<script src="pwa.min.js"></script>
 		<script>
 			UpUp.start({
+				'cache-version': 'v1',
 				'content-url': 'offline.html',
+				'assets': ['/css/style.css',
+						   '/js/custom.js',
+						   '/image/FAYALOGO.png'
+						],
 				'service-worker-url': 'service-worker.js'
 			});
 		</script>
